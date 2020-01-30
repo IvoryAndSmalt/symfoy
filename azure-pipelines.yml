@@ -22,5 +22,5 @@ steps:
   inputs:
     sshEndpoint: 'promo-31 user alexandreb331'
     runOptions: 'commands'
-    commands: 'cd /home/alexandreb331/www/public/test3 && git pull && composer install && yarn install && yarn encore production && APP_ENV=prod && php bin/console cache:clear'
+    commands: 'cd /home/alexandreb331/www/public/test3 && git pull && composer install && yarn install && yarn encore production && php bin/console cache:clear --env=prod'
 
