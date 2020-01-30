@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'promo-31 user alexandreb331'
-    runOptions: 'commands'
-    commands: 'cd /home/alexandreb331/www/public/test3 && git pull && composer install && yarn install && yarn encore production'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -22,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'promo-31 user alexandreb331'
+    runOptions: 'commands'
+    commands: 'cd /home/alexandreb331/www/public/test3 && git pull && composer install && yarn install && yarn encore production'
+
