@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
-        <title>{% block title %}Welcome!{% endblock %}</title>
-         
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}
-		    {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		{% block stylesheets %}
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+            {{ encore_entry_link_tags('style') }}
+		{% endblock %}
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+		{% block javascripts %}
+			<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</body>
 </html>
