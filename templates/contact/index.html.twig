@@ -3,18 +3,34 @@
 {% block title %}Hello ContactController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello </h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/symfoy/src/Controller/ContactController.php'|file_link(0) }}">src/Controller/ContactController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/symfoy/templates/contact/index.html.twig'|file_link(0) }}">templates/contact/index.html.twig</a></code></li>
-    </ul>
+   <form method="POST" id="contact-form" class="">
+    <div id="form-inner">
+        <div id="form-title">
+            <h2 id="form-h2" class="">
+                <span class="">
+                    Contact me
+                </span>
+            </h2>
+        </div>
+        <div id="forminputs">
+            <div id="inptypetext">
+                <input type="text" class="" required placeholder="Name" name="name">
+                <input type="email" class="" required placeholder="Email" name="email">
+		<input type="text" class="" required placeholder="Subject" name="subject">
+            </div>
+            <div id="message">
+                <textarea name="message" required placeholder="Message" id="mymessage" class="b"></textarea>
+            </div>
+            <div id="submit">
+                <input type="submit" value="Send" name="submit" class="">
+            </div>
+        </div>
+    </div>
+</form>
 </div>
 {% endblock %}
