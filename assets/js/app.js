@@ -45,14 +45,24 @@ fetch("/curl", {
         lat = json[i].fields.coordonnees_insee[0];
         lon = json[i].fields.coordonnees_insee[1];
         nom = json[i].fields.nom_de_la_manifestation;
+        domaine = json[i].fields.domaine;
+        mois = json[i].fields.mois_habituel_de_debut;
         console.log(lat,lon);   
         L.marker([lat, lon])
         .addTo(map)
-         .bindPopup(nom); 
+         .bindPopup('<strong>'+nom+'</strong>' + '<br/>' + domaine  + '<br/>' + mois); 
+         
         
     }
 });
 
+                // let select = document.getElementById ("list");
+                // for(var i=0;i<json.length;i++){
+                //         let newOption = new Option (json[i].fields.domaine);
+                //         select.options.add (newOption);
+                // }
+                // console.log(json[i].id);
+                // console.log(json[i].length);
 
 
   
