@@ -1,20 +1,30 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
-
-
-<div class="example-wrapper">
-    <h1>Hello </h1>
-    <select  class= "select" id="list"> 
-    <option value="">Tous</option>
-    </select>
-    <div id="map"></div>
-
-    
-
-    
-
-    
-</div>
-    
-{% endblock %}
+    <div id="loader">
+        <img src="loader.gif" alt="loader">
+        <p>Chargement en cours</p>
+    </div>
+	<div class="titre">
+    </div>
+    <div class="container">
+        <div class="carte">
+            <div id="map"></div>
+        </div>
+        <div class="aside">
+            <form id="formulaire" action="" method="post">
+                <select name="Domaine" id="domaine">
+                    <option value="tous" selected="selected">Tous</option>
+                </select>
+                <select name="Département" id="departement">
+                    <option value="tous" selected="selected">Tous</option>
+                </select>
+                <select name="Mois" id="mois">
+                    <option value="tous" selected="selected">Tous</option>
+                </select>
+                <input type="submit" value="Validez">
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+	
+</div>{% endblock %}
