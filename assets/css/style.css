@@ -1,3 +1,54 @@
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXX Reset XXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXX LOADER XXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
 #loader {
@@ -43,12 +94,22 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
 .carte{
   width: 65%;
   height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 13px 33px -10px rgba(0, 0, 0, 0.20);
 }
 .aside{
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #F3F3F3;
+  padding: 20px;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.2);
+  /* opacity: 0.8; */
+  
 }
 #formulaire{
   width: 100%;
@@ -57,8 +118,35 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
   align-items: center;
 
 }
+label{
+  width: 100%;
+  padding: 0 .5em;
+  color: rgb(14, 15, 66);
+}
 select{
   width: 100%;
+  padding: 0 .5em;
+  color: rgb(14, 15, 66);
+  cursor: pointer;
+  font-family: "helvetica neue", helvetica;
+  font-size: 1.2 rem;
+  
+}
+.button{
+  text-transform: uppercase;
+  border: 1px solid #2d7baf;
+	padding: 10px 0;
+  background-color:#3498db;
+  color:#fff;
+  box-shadow:0px 3px 0px #2d7baf;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all .3s;
+}
+.button:hover{
+  color: #2d7baf;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 p{

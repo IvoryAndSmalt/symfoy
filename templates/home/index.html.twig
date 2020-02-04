@@ -1,3 +1,6 @@
+
+
+
 {% extends 'base.html.twig' %}
 {% block body %}
     <div id="loader">
@@ -12,16 +15,19 @@
         </div>
         <div class="aside">
             <form id="formulaire" action="" method="post">
-                <select name="Domaine" id="domaine">
+            <label for="Domaine">Recherche par domaine</label>
+                <select  name="Domaine" id="domaine" >
                     <option value="tous" selected="selected">Tous</option>
                 </select>
+                <label for="Domaine">Recherche par département</label>
                 <select name="Département" id="departement">
                     <option value="tous" selected="selected">Tous</option>
                 </select>
-                <select name="Mois" id="mois">
+                <label for="Domaine">Recherche par mois</label>
+                <select name="Mois" id="mois" >
                     <option value="tous" selected="selected">Tous</option>
                 </select>
-                <input type="submit" value="Validez">
+                <input class="button" type="submit" value="Valider">
                 <p id="message"></p>
             </form>
         </div>
