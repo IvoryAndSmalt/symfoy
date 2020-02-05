@@ -7,25 +7,35 @@
         <img src="loader.gif" alt="loader">
         <p>Chargement en cours</p>
     </div>
+    
 	<div class="titre">
+        <div class="container">
+               <h1>Festifetch</h1>
+                <h2>Tous les festivals en France</h2>
+        </div>
+     
     </div>
-    <div class="container">
+    <div class="container between">
         <div class="carte">
             <div id="map"></div>
+            <div id="popup">
+                <p>Utilisez<br/>CTRL + Scroll pour zoomer</p>
+            </div>
         </div>
         <div class="aside">
+            <p>Retrouvez les informations clés sur les festivals, salons, rencontres, dans tous les domaines culturels et sur tout le territoire.</p>
             <form id="formulaire" action="" method="post">
             <label for="Domaine">Recherche par domaine</label>
                 <select  name="Domaine" id="domaine" >
-                    <option value="tous" selected="selected">Tous</option>
+                    
                 </select>
                 <label for="Domaine">Recherche par département</label>
                 <select name="Département" id="departement">
-                    <option value="tous" selected="selected">Tous</option>
+                    
                 </select>
                 <label for="Domaine">Recherche par mois</label>
                 <select name="Mois" id="mois" >
-                    <option value="tous" selected="selected">Tous</option>
+                    
                 </select>
                 <input class="button" type="submit" value="Valider">
                 <p id="message"></p>

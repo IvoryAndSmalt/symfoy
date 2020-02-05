@@ -2,12 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 		{% block stylesheets %}
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
             {{ encore_entry_link_tags('style') }}
 		{% endblock %}
 		<title>
-			{% block title %}Welcome!
+			{% block title %}Festifetch - Tous les festivals en France
 			{% endblock %}
 		</title>
 
@@ -17,6 +19,7 @@
 		{% block body %}{% endblock %}
 		{% block javascripts %}
 			<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+			<script src="//unpkg.com/leaflet-gesture-handling"></script>
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 
