@@ -4,13 +4,18 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <div id="loader">
+        <p>Bienvenue sur Festifetch</p>
         <img src="loader.gif" alt="loader">
         <p>Chargement en cours</p>
     </div>
-    
-	<div class="titre">
+    <div id="fleche">
+        <img src="fleche.png" alt="fleche"
+        />
+      </div>
+	<div id="titre">
         <div class="container">
-               <h1>Festifetch</h1>
+            <img src="logo.png" alt="logo">
+               <h1>estifetch</h1>
                 <h2>Tous les festivals en France</h2>
         </div>
      
@@ -19,7 +24,7 @@
         <div class="carte">
             <div id="map"></div>
             <div id="popup">
-                <p>Utilisez<br/>CTRL + Scroll pour zoomer</p>
+                <p>Utilisez<br/><span>Ctrl</span> + Scroll pour zoomer</p>
             </div>
         </div>
         <div class="aside">
@@ -42,5 +47,18 @@
             </form>
         </div>
     </div>
+
+<footer>
+    <div class="container">
+        <p>© 2020 Copyright : ACS Promo CSS - 117</p>  
+        <div class="reseaux">
+            <img src="f_logo.png" alt="icone facebook" class="reseau">  
+        <img src="twit_logo.png" alt="icone twitter" class="reseau"> 
+        
+        </div>
+        
+    </div>
+        
+    </footer>
 	
 </div>{% endblock %}
